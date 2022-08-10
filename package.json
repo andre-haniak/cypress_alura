@@ -1,0 +1,11 @@
+{
+  "name": "cypress_alura",
+  "version": "1.0.0",
+  "description": "Curso cypress alura",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Assainks",
+  "license": "ISC"
+}
