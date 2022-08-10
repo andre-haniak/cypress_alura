@@ -29,4 +29,12 @@ describe('Login e registro de usuários alura pic', () =>{
         cy.contains('ap-vmessage', 'Mininum length is 8').should('be.visible')
     });
 
+
+    it('Verifica mensagens de user name com letra maiúscula', () => {
+        cy.contains('a', 'Register now').click()
+        cy.get('input[formcontrolname="userName"]').type('Assainks')
+        cy.contains('button', 'Register').click()
+        cy.contains('ap-vmessage', 'Must be lower case').should('be.visible')
+    });
+
 })
