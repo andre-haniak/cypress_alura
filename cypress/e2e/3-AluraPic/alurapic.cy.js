@@ -30,7 +30,7 @@ describe('Login e registro de usuários alura pic', () =>{
     });
 
 
-    it('Verifica mensagens de user name com letra maiúscula', () => {
+    it('Verifica mensagem de usuário está com letra maiúscula', () => {
         cy.contains('a', 'Register now').click()
         cy.get('input[formcontrolname="userName"]').type('Assainks')
         cy.contains('button', 'Register').click()
