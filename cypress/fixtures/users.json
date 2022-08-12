@@ -1,0 +1,20 @@
+[
+    {
+        "email": "aCamilo@alura.com",
+        "fullName": "Arthur Camilo",
+        "userName": "aCamilo",
+        "password": "12345678"
+    },
+    {
+        "email": "rCamilo@alura.com",
+        "fullName": "Raimundo Camilo",
+        "userName": "rCamilo",
+        "password": "12345678"
+    },
+    {
+        "email": "jCamilo@alura.com",
+        "fullName": "João Camilo",
+        "userName": "jCamilo",
+        "password": "12345678"
+    }
+]  

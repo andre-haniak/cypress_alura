@@ -47,8 +47,12 @@ describe('Login e registro de usuários alura pic', () =>{
         })
     });
 
-    it.only('Registro de usuário', () => {
-        cy.registro('hurackk', 'hurackk', '12345678', 'huracckk@alura.com')
+    const users = require('../../fixtures/users.json')
+
+    users.forEach(user => {
+        it.only(`Registro do ${user.fullName}`, () => {
+            cy.registro(user.fullName, user.userName, user.password, user.email)
+        });
     });
 
     it.only('Registro de usuário já cadastrado', () => {
