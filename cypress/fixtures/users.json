@@ -2,19 +2,19 @@
     {
         "email": "aCamilo@alura.com",
         "fullName": "Arthur Camilo",
-        "userName": "aCamilo",
+        "userName": "acamilo",
         "password": "12345678"
     },
     {
         "email": "rCamilo@alura.com",
         "fullName": "Raimundo Camilo",
-        "userName": "rCamilo",
+        "userName": "rcamilo",
         "password": "12345678"
     },
     {
         "email": "jCamilo@alura.com",
         "fullName": "João Camilo",
-        "userName": "jCamilo",
+        "userName": "jcamilo",
         "password": "12345678"
     }
 ]  
