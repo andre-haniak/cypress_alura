@@ -1,7 +1,7 @@
 describe('Funcionalidades do alura pic', () =>{
 
     beforeEach(() => {
-        cy.visit('https://alura-fotos.herokuapp.com');
+        cy.visit('/');
     });
     
     it('Verifica mensagens tela inicial', () => {

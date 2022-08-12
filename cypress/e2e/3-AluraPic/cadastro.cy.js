@@ -1,7 +1,7 @@
 describe('Cadastro de usuários alura pic', () =>{
 
     beforeEach(() => {
-        cy.visit('https://alura-fotos.herokuapp.com');
+        cy.visit('/');
     });
 
     it('Verifica mensagens de validacão', () => {
@@ -44,7 +44,7 @@ describe('Cadastro de usuários alura pic', () =>{
     });
 
     it('Registro de usuário já cadastrado', () => {
-        cy.registro('hurackk', 'hurackk', '12345678', 'hurackk@alura.com')
+        cy.registro('flavio', 'flavio', '12345678', 'flavio@alura.com')
         cy.contains('ap-vmessage', 'Username already taken').should('be.visible')
     });
 })

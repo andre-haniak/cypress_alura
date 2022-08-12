@@ -14,6 +14,7 @@ module.exports = defineConfig({
       "timestamp": "mmddyyyy_HHMMss"    
     },
     projectId: "mdp9bj",
+    "baseUrl": "https://alura-fotos.herokuapp.com"
   },
 });
 
