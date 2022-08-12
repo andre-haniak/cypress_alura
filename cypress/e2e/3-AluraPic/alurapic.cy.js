@@ -46,4 +46,13 @@ describe('Login e registro de usuários alura pic', () =>{
             expect(str).to.equal('Invalid user name or password')
         })
     });
+
+    it.only('Registro de usuário', () => {
+        cy.registro('hurackk', 'hurackk', '12345678', 'huracckk@alura.com')
+    });
+
+    it.only('Registro de usuário já cadastrado', () => {
+        cy.registro('hurackk', 'hurakk', '12345678', 'hurackk@alura.com')
+        cy.contains('ap-vmessage', 'Username already taken').should('be.visible')
+    });
 })
