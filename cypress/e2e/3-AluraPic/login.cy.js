@@ -1,10 +1,10 @@
 describe('Login de usuários alura pic', () =>{
 
     beforeEach(() => {
-        cy.visit('/');
+        cy.visit('/user/login');
     });
 
-    it('fazer login de usuário válido', () => {
+    it.only('fazer login de usuário válido', () => {
         cy.login(Cypress.env('userName'), Cypress.env('password'))
         cy.contains('a', '(Logout)').should('be.visible')
     });
